@@ -15,8 +15,8 @@ def subscribe(request):
                                     form.cleaned_data)
             mail.send_mail('Confirmação de inscrição',
                            body,
-                           'contato@eventex.com.br',
-                           ['contato@eventex.com.br', form.cleaned_data['email']])
+                           'cthadeusantos@hotmail.com',
+                           ['cthadeusantos@hotmail.com', form.cleaned_data['email']])
             messages.success(request, 'Inscrição realizada com sucesso!')
             return HttpResponseRedirect('/inscricao/')
         else:
